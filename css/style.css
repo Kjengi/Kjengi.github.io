@@ -1,25 +1,48 @@
-	body 
-		{
-			background-image: url("../source/yhorm the giant.jpg");
-			background-repeat:no-repeat;	
-			background-size:cover;
-		}
-		*{
-			margin: 0;
-			padding: 0;
-			list-style: none;
-			text-decoration: none;
-		}
+@keyframes bounce {
+	0%{
+		color: blueviolet
+	}
+	50%{
+		color: darkred
+	}
+	100%{
+		color: blueviolet
+	}
+}	
+body{background-image: url("../source/yhorm the giant.jpg");
+	background-repeat:no-repeat;	
+	background-size:cover;
+	font-family: english;
+}
+*{	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+main.box{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 5px;
+	font-size: 24px;
+	border: none;
+	background-image: url("../source/yhorm the giant.jpg");	
+}
+main.box-images{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 5px;
+	font-size: 24px;
+	border: none;
+	background-image: url(".../source/dark texture.jpg");	
+}
 
-.container
-		{
+.container{
 		 	border-radius: 5px;
 		 	background-color: #f2f2f2;
 		 	padding: 20px;
 		}
 
-	ul 
-			{
+ul {
   			list-style-type: none;
 			margin: 0;
 			padding: 0;
@@ -119,10 +142,19 @@ header 	{
 
 			header nav .button:hover{
 				filter: brightness(1.05);
+				animation: bounce;
+				animation-duration: 2s;
+				animation-iteration-count: infinite;
 			}
 
 .container 	{
 		  border-radius: 5px;
 		  background-color: #f2f2f2;
 		  padding: 20px;
-			}
+			}.box {
+	font-family: english;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	color: orangered;
+}
